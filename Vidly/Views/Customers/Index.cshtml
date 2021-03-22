@@ -1,0 +1,18 @@
+﻿@model Vidly.ViewModels.CustomersViewModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table class="table table-bordered">
+    <thead>
+        <th>Customer</th>
+    </thead>
+        <tbody>
+            @foreach (var customer in Model.Customers)
+            {
+                <td>@customer.Name</td>
+            }
+        </tbody>
+</table>

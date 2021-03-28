@@ -15,5 +15,11 @@ namespace Vidly.Models
         [StringLength(255)]
         public string Name { get; set; }
 
+        public static readonly byte Unknown = 0;
+        public static readonly byte PayAsYouGo = 1;
+        public static readonly byte Monthly = 2;
+        public static readonly byte Quartely = 3;
+        public static readonly byte Yearly = 4;
+
     }
 }

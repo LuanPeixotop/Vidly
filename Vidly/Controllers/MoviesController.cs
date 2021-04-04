@@ -11,7 +11,7 @@ namespace Vidly.Controllers
 {
     public class MoviesController : Controller
     {
-        private ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
 
         public MoviesController()
         {
@@ -104,7 +104,7 @@ namespace Vidly.Controllers
 
     public ViewResult Index()
         {
-            return View(_context.Movie.Include(c => c.Genre).ToList());
+            return View();
         }
 
         public ActionResult Details(int id)

@@ -12,7 +12,7 @@ namespace Vidly.Controllers
     public class CustomersController : Controller
     {
 
-        private ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
 
         public CustomersController()
         {
@@ -81,7 +81,7 @@ namespace Vidly.Controllers
 
         public ActionResult Index()
         {
-            return View(_context.Customer.Include(c => c.MembershipType).ToList());
+            return View();
         }
 
 

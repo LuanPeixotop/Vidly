@@ -239,6 +239,14 @@
     <Compile Include="Migrations\202103262052420_SeedGenresNames.Designer.cs">
       <DependentUpon>202103262052420_SeedGenresNames.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104042235035_SeedUsersAndRoles.cs" />
+    <Compile Include="Migrations\202104042235035_SeedUsersAndRoles.Designer.cs">
+      <DependentUpon>202104042235035_SeedUsersAndRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104182002196_AddDrivingLicenseToApplicationUser.cs" />
+    <Compile Include="Migrations\202104182002196_AddDrivingLicenseToApplicationUser.Designer.cs">
+      <DependentUpon>202104182002196_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -248,6 +256,7 @@
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\RoleName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomerFormViewModel.cs" />
@@ -490,10 +499,11 @@
     <Content Include="Views\Shared\_Navbar.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
-    <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\List.cshtml" />
     <Content Include="Views\Movies\Details.cshtml" />
     <Content Include="Views\Customers\CustomerForm.cshtml" />
     <Content Include="Views\Movies\MovieForm.cshtml" />
+    <Content Include="Views\Movies\ReadOnlyList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -544,6 +554,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202103262052420_SeedGenresNames.resx">
       <DependentUpon>202103262052420_SeedGenresNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104042235035_SeedUsersAndRoles.resx">
+      <DependentUpon>202104042235035_SeedUsersAndRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104182002196_AddDrivingLicenseToApplicationUser.resx">
+      <DependentUpon>202104182002196_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
